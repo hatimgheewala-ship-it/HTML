@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Book List</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f3f0ff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #673ab7;
+        }
+
+        /* Sibling Selector - styles the paragraph right after h1 */
+        h1+p {
+            background: #d1c4e9;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #4527a0;
+            display: inline-block;
+        }
+
+        ul {
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        /* Child Selector - styles only direct li children of ul */
+        ul>li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #4a148c;
+            padding: 10px 20px;
+            margin: 6px auto;
+            width: 260px;
+            background: #ede7f6;
+            border-radius: 8px;
+        }
+
+        /* nth-child - highlights the 3rd item as Reader's Choice */
+        ul li:nth-child(3) {
+            background: #b39ddb;
+            color: #311b92;
+        }
+
+        .desc {
+            color: #555;
+            margin-top: 20px;
+            font-size: 15px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* first-letter - makes the first letter big and bold */
+        .desc::first-letter {
+            font-size: 220%;
+            color: #673ab7;
+            font-weight: bold;
+        }
+
+        .links {
+            margin-top: 25px;
+        }
+
+        /* Hover Effect - links change when mouse moves over them */
+        a {
+            color: #673ab7;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 0 12px;
+            padding: 8px 18px;
+            border: 2px solid #673ab7;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            background: #673ab7;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Book List</h1>
+    <p>Pick your favourite book and start reading!</p>
+
+    <ul>
+        <li>Harry Potter</li>
+        <li>The Jungle Book</li>
+        <li>Charlie and the Chocolate Factory — Reader's Choice!</li>
+        <li>The Lion, the Witch and the Wardrobe</li>
+        <li>Diary of a Wimpy Kid</li>
+    </ul>
+
+    <p class="desc">Every book takes you on a new adventure and
+        helps you discover exciting characters, places, and stories.</p>
+
+    <div class="links">
+        <a href="#">Read Now</a>
+        <a href="#">See More</a>
+    </div>
+</body>
+
+</html>

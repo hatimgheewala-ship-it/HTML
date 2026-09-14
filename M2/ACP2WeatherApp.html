@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Travel App Homepage</title>
+
+    <style>
+        /* Universal selector: applies basic settings to the full page */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body background uses colour, image pattern, repeat, position, and attachment */
+        body {
+            background-color: #90ee90;
+            background-image: radial-gradient(circle, white 2px, transparent 3px);
+            background-size: 40px 40px;
+            background-repeat: repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #f0fff0;
+        }
+
+        .weather-card {
+            width: 400px;
+            border: 3px solid white;
+            border-radius: 20px;
+            background-image: linear-gradient(to bottom right, #32cd32, #98fb98);
+        }
+
+        .weather-icon {
+            font-size: 70px;
+            animation: floatCloud 3s infinite alternate;
+        }
+
+        #temperature {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffffe0;
+        }
+
+        .details {
+            font-size: 18px;
+            color: white;
+        }
+
+        .forecast-section {
+            width: 600px;
+            border: 3px solid white;
+            border-radius: 15px;
+            background-image: radial-gradient(circle, white, #90ee90);
+            color: #064d06;
+        }
+
+        .forecast-title {
+            color: #064d06;
+        }
+
+        .day {
+            border: 2px solid #228b22;
+            font-size: 17px;
+            color: #064d06;
+        }
+
+        /* Group selector: styles both headings together */
+        h2,
+        h3 {
+            color: white;
+        }
+
+        /* CSS animation using @keyframes */
+        @keyframes floatCloud {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Travel App Homepage</h1>
+
+    <p class="subtitle">
+        Discover amazing places and plan your next adventure.
+    </p>
+
+    <div class="weather-card">
+        <h2>Today's Destination</h2>
+
+        <div class="weather-icon">✈️</div>
+
+        <p id="temperature">Goa</p>
+
+        <p class="details">Country: India</p>
+        <p class="details">Place: Baga Beach</p>
+        <p class="details">Activity: Beach Visit</p>
+        <p class="details">Travel Time: 3 Days</p>
+    </div>
+
+    <h2>Upcoming Trips</h2>
+
+    <div class="forecast-section">
+        <h3 class="forecast-title">Next 5 Destinations</h3>
+
+        <p class="day">Monday: Goa - Beach</p>
+        <p class="day">Tuesday: Jaipur - Forts</p>
+        <p class="day">Wednesday: Kerala - Backwaters</p>
+        <p class="day">Thursday: Delhi - Monuments</p>
+        <p class="day">Friday: Manali - Mountains</p>
+    </div>
+
+</body>
+
+</html>
