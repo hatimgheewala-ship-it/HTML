@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Library Membership</title>
+</head>
+
+<body>
+
+    <h1>📚 My Library Membership</h1>
+    <p>Fill in the form below to register for your library membership!</p>
+    <hr>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>Your Name</label><br>
+            <input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+            <label>Student ID</label><br>
+            <input type="password" id="sid" placeholder="Your secret ID"><br><br>
+
+            <label>Date of Birth</label><br>
+            <input type="date" id="dob"><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Your Reading Preferences</legend>
+
+            <label>Choose your Favourite Genre</label><br>
+            <select id="genre">
+                <option value="">-- Select a genre --</option>
+                <option value="adventure">Adventure</option>
+                <option value="science">Science</option>
+                <option value="fantasy">Fantasy</option>
+            </select><br><br>
+
+            <label>What type of books do you enjoy?</label><br>
+            <input type="radio" name="type" value="story"> Story Books<br>
+            <input type="radio" name="type" value="comics"> Comics<br>
+            <input type="radio" name="type" value="science"> Science Books<br>
+            <input type="radio" name="type" value="history"> History Books<br><br>
+
+            <label>Any book suggestions?</label><br>
+            <textarea id="notes" rows="3" cols="35" placeholder="Enter your favourite book or author."></textarea><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferred Library Day</legend>
+
+            <input type="checkbox" value="mon"> Monday<br>
+            <input type="checkbox" value="wed"> Wednesday<br>
+            <input type="checkbox" value="fri"> Friday<br>
+
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Join the Library">
+
+    </form>
+
+</body>
+
+</html>
