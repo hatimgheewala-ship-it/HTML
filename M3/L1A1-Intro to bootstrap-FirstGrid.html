@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favourite Foods</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- STEP 1 - Bootstrap CSS link -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      padding: 30px 15px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2196F3;
+    }
+
+    .food-card {
+      text-align: center;
+      border: 2px solid #2196F3;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #e3f2fd;
+    }
+
+    .food-card h3 {
+      color: #2196F3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My Favourite Foods</h1>
+
+  <!-- STEP 2 - container keeps the layout neat and centred -->
+  <div class="container">
+
+    <!-- STEP 3 - row holds all the columns -->
+    <div class="row">
+
+      <!-- STEP 4 - Bootstrap columns -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="food-card">
+          <h3>Pizza</h3>
+          <p>I love eating cheesy pizza with my favourite toppings.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="food-card">
+          <h3>Sandwich</h3>
+          <p>A fresh vegetable sandwich is a perfect snack for me.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="food-card">
+          <h3>Ice Cream</h3>
+          <p>I enjoy having a scoop of ice cream on a hot day.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- STEP 5 - Bootstrap JS script -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+
+</body>
+</html>

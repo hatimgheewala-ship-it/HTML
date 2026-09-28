@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favourite Places Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STEP 1 - Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            padding: 30px 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2196F3;
+        }
+
+        .place-card {
+            text-align: center;
+            border: 2px solid #2196F3;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #e3f2fd;
+        }
+
+        .place-card h3 {
+            color: #2196F3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Favourite Places</h1>
+
+    <!-- STEP 2 - container keeps the layout neat and centred -->
+    <div class="container">
+
+        <!-- STEP 3 - row holds all the columns -->
+        <div class="row">
+
+            <!-- STEP 4 - Bootstrap responsive columns -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="place-card">
+                    <h3>Beach</h3>
+                    <p>I love visiting the beach and playing in the sand.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="place-card">
+                    <h3>Mountains</h3>
+                    <p>Mountains are peaceful places where I enjoy nature and fresh air.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="place-card">
+                    <h3>Park</h3>
+                    <p>I enjoy spending time in the park and playing outdoor games.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- STEP 5 - Bootstrap JS script -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+
+</body>
+
+</html>
